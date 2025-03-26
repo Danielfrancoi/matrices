@@ -10,3 +10,11 @@ gcc matrices_hilos.c -o matrices_hilos -pthread
 # Compilacion procesos
 
 gcc matrices_procesos.c -o matrices_procesos -lrt
+
+# GPROF
+
+gcc -g -pg  matrices_secuencial.c -o matrices_secuenciales_gprof
+./matrices_secuenciales_gprof -t 1000
+ls -ls gmon.out
+gprof -l matrices_secuenciales_gprof -t 1000 >gprof.out
+more gprof.out
