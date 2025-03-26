@@ -1,0 +1,11 @@
+# Compilacion secuencial
+
+gcc matrices_secuencia.c -o matrices_secuencial
+
+# Compilacion hilos
+
+gcc matrices_hilos.c -o matrices_hilos -pthread
+
+# Compilacion procesos
+
+gcc matrices_procesos.c -o matrices_procesos -lrt
