@@ -1,6 +1,7 @@
 # Compilacion secuencial
 
 gcc matrices_secuencia.c -o matrices_secuencial
+gcc -O1 matrices_secuencial.c -o matrices_secuencial_O1
 
 # Compilacion hilos
 
