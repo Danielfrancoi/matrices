@@ -1,6 +1,6 @@
 # Compilacion secuencial
 
-gcc matrices_secuencia.c -o matrices_secuencial
+gcc matrices_secuencial.c -o matrices_secuencial
 gcc -O1 matrices_secuencial.c -o matrices_secuencial_O1
 
 # Compilacion hilos
@@ -10,6 +10,10 @@ gcc matrices_hilos.c -o matrices_hilos -pthread
 # Compilacion procesos
 
 gcc matrices_procesos.c -o matrices_procesos -lrt
+
+# Compilacion con OpenMP
+
+gcc matrices_openmp.c -o matrices_openmp -fopenmp -lm
 
 # GPROF
 
