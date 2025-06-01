@@ -16,6 +16,7 @@ gcc matrices_procesos.c -o matrices_procesos -lrt
 gcc matrices_openmp.c -o matrices_openmp -fopenmp -lm
 
 # Compilacion y ejecucion con MPI
+
 mpicc matrices_mpi.c -o matrices_mpi
 mpirun -np <num_procesos> ./matrices_mpi -n <dimension_matriz>
 
